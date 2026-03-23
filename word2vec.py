@@ -6,11 +6,10 @@ import numpy as np
 from text8 import Text8
 
 parser = argparse.ArgumentParser()
-# These arguments will be set appropriately by ReCodEx, even if you change them.
 parser.add_argument("--batch_size", default=128, type=int, help="Batch size.")
 parser.add_argument("--max_words", default=1_000_000, type=int, help="Maximum number of words to load from the dataset.")
 parser.add_argument("--window_size", default=2, type=int, help="Window size to use.")
-parser.add_argument("--learning_rate", default=0.025, type=float, help="Initial learning rate.")
+parser.add_argument("--learning_rate", default=0.025, type=float, help="Learning rate.")
 parser.add_argument("--epochs", default=1, type=int, help="Number of epochs.")
 parser.add_argument("--seed", default=42, type=int, help="Random seed.")
 parser.add_argument("--embedding_dim", default=60, type=int, help="Word embedding dimension.")
